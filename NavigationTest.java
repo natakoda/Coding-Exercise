@@ -22,9 +22,18 @@ public class NavigationTest extends TestBaseSetup
 	}
 	
 	@Test
+	/*
+	The test verifies that navigation between the Uptake Home page and Approach page works correctly: 
+	1. Launch Home Page
+	2. Verify that Home page is displayed
+	3. Click on Approach Link on Top Nav bar
+	4. Verify that Approach page is displayed
+	5. Click on the Company Logo 
+	6. Verify that Home page is displayed
+	 */
 	public void verifyHomePage() {
 		WebDriverWait wait = new WebDriverWait(driver, 30);
-		System.out.println("Navigation between Home page-Approach page-Approach/Intelligence page test...");
+		System.out.println("Navigation between Home page and Approach page test...");
 		System.out.println("Varifying Home page");
 		HomePage homePage = new HomePage(driver);
 		//verifying that you are on the Home page
